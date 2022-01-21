@@ -1,6 +1,6 @@
-FROM alvisisme/ubuntu:20.04
+FROM ubuntu:20.04
 
-RUN　apt-get update \
+RUN apt-get update \
   && apt-get -y install wget \
   && wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
   && dpkg -i packages-microsoft-prod.deb \
